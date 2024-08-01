@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import GitButton from "@/components/gitbutton"
+import Link from "next/link";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,7 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={inter.className}>
+        <Link href='https://github.com/sreehhari'>
       <GitButton />
+      </Link>
 
         {children}</body>
     </html>

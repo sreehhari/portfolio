@@ -22,11 +22,29 @@ function Navbar({ className }: { className?: string }) {
         </MenuItem>
         </Link>
         <MenuItem setActive={setActive} active={active} item="Projects">
-        <div className="flex flex-col space-y-4 text-sm">
-          <HoveredLink href="/web-dev">Weather App</HoveredLink>
-          <HoveredLink href="/web-dev">Texticles</HoveredLink>
-          <HoveredLink href="/web-dev">Arch Dot files</HoveredLink>
+        <div className="text-sm grid grid-cols-2 gap-10 p-4">
+            <ProductItem 
+              title="Gigaweather"
+              href="https://gigaweather.vercel.app"
+              src='/gigaweather.png'
+              description="Its a weather app"
 
+            
+            />
+            <ProductItem
+            title="Austrian Painter"
+            href="https://austrian-painter.vercel.app"
+            src="/austrianpainter.png"
+            description="just for fun project to learn the basics of webDev"
+          />
+          <ProductItem
+          title="Portfolio"
+          href="/"
+          src="/thiswebsite.png"
+          description="developer portfolio made in nextJS"
+          
+          
+          ></ProductItem>
 
         </div>
         </MenuItem>
